@@ -1,0 +1,11 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root{
+	-fx-font-family: 'Century Gothic';
+}
+
+#usertxt, #passtxt{
+	-fx-background-color: transparent;
+	-fx-border-width: 0 0 1px 0;
+	-fx-border-color: #ffffff;
+	-fx-text-fill: #203060;
+}

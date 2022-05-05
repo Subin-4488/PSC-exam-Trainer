@@ -1,5 +1,8 @@
 module PSC_exam_trainer {
 	requires javafx.controls;
+	requires javafx.fxml;
+	requires javafx.base;
 	
 	opens application to javafx.graphics, javafx.fxml;
+	opens controllers to javafx.fxml;
 }

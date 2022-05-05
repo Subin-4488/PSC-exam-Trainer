@@ -1,0 +1,26 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root{
+	-fx-font-family: 'Century Gothic';
+}
+
+#adminbtn, #userbtn{
+	-fx-background-color: #ffffff;
+	-fx-background-radius: 50px;
+	-fx-border-radius: 50px;
+}
+
+#adminbtn:hover, #userbtn:hover{
+	-fx-background-color: red;
+}
+
+#loginbtn, #signupbtn{
+	-fx-background-color: #F35D5D;
+	-fx-text-fill: #ffffff;
+	-fx-background-radius: 5px;
+	-fx-border-radius: 5px;
+}
+
+#loginbtn:hover, #signupbtn:hover{
+	-fx-background-color: black;
+	-fx-text-fill: white
+}
