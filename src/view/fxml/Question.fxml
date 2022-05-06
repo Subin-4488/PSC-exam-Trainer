@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="questionpane" prefHeight="526.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.QuestionsController">
+   <children>
+      <Label fx:id="topiclabel" layoutX="61.0" layoutY="31.0" prefHeight="35.0" prefWidth="210.0" text="TOPIC" textFill="#2a1e17">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="61.0" layoutY="81.0" prefHeight="35.0" prefWidth="210.0" text="Question:" textFill="#2a1e17">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <TextArea fx:id="questiontxtarea" editable="false" layoutX="61.0" layoutY="116.0" prefHeight="168.0" prefWidth="546.0">
+         <font>
+            <Font size="15.0" />
+         </font></TextArea>
+      <Label layoutX="61.0" layoutY="293.0" prefHeight="35.0" prefWidth="210.0" text="Options:" textFill="#2a1e17">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <VBox alignment="CENTER_LEFT" layoutX="61.0" layoutY="328.0" prefHeight="122.0" prefWidth="581.0" spacing="15.0">
+         <children>
+            <RadioButton fx:id="optionradioa" mnemonicParsing="false" text="A" textFill="#2a1e17">
+               <toggleGroup>
+                  <ToggleGroup fx:id="optionsGroup" />
+               </toggleGroup>
+               <font>
+                  <Font name="Century Gothic Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="optionradiob" mnemonicParsing="false" text="B" textFill="#2a1e17" toggleGroup="$optionsGroup">
+               <font>
+                  <Font name="Century Gothic Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="optionradioc" mnemonicParsing="false" text="C" textFill="#2a1e17" toggleGroup="$optionsGroup">
+               <font>
+                  <Font name="Century Gothic Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="optionradiod" mnemonicParsing="false" text="D" textFill="#2a1e17" toggleGroup="$optionsGroup">
+               <font>
+                  <Font name="Century Gothic Bold" size="15.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </VBox>
+      <Button fx:id="savebtn" layoutX="509.0" layoutY="462.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="133.0" text="Save">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+   </children>
+   <stylesheets>
+      <URL value="@../css/button.css" />
+      <URL value="@../css/label.css" />
+      <URL value="@../css/panes.css" />
+      <URL value="@../css/textfield.css" />
+   </stylesheets>
+</AnchorPane>

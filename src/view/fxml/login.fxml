@@ -27,7 +27,7 @@
             <Font name="System Bold" size="31.0" />
          </font>
       </Label>
-      <Pane fx:id="loginpane" layoutX="47.0" layoutY="325.0" prefHeight="262.0" prefWidth="517.0">
+      <Pane fx:id="wrappane" layoutX="47.0" layoutY="325.0" prefHeight="262.0" prefWidth="517.0">
          <children>
             <Button fx:id="adminbtn" layoutX="15.0" layoutY="21.0" mnemonicParsing="false" onAction="#adminButtonAction" prefHeight="28.0" prefWidth="108.0" text="Admin">
                <font>
@@ -39,26 +39,30 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Button>
-            <TextField fx:id="usertxt" layoutX="36.0" layoutY="120.0" prefHeight="36.0" prefWidth="461.0" promptText="Username">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </TextField>
-            <TextField fx:id="passtxt" layoutX="36.0" layoutY="184.0" prefHeight="36.0" prefWidth="461.0" promptText="Password">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </TextField>
-            <ImageView fitHeight="14.0" fitWidth="17.0" layoutX="13.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../assets/briefcase.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="14.0" fitWidth="17.0" layoutX="13.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../assets/lock.png" />
-               </image>
-            </ImageView>
+            <Pane fx:id="mainpane" layoutX="10.0" layoutY="70.0" prefHeight="188.0" prefWidth="497.0">
+               <children>
+                  <TextField fx:id="usertxt" layoutX="30.0" layoutY="46.0" prefHeight="36.0" prefWidth="461.0" promptText="Username">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="passtxt" layoutX="30.0" layoutY="110.0" prefHeight="36.0" prefWidth="461.0" promptText="Password">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="14.0" fitWidth="17.0" layoutX="7.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/briefcase.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="14.0" fitWidth="17.0" layoutX="7.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/lock.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
          </children>
       </Pane>
       <Button fx:id="loginbtn" layoutX="63.0" layoutY="617.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="38.0" prefWidth="224.0" text="Log-in">

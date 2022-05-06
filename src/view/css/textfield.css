@@ -3,9 +3,15 @@
 	-fx-font-family: 'Century Gothic';
 }
 
-#usertxt, #passtxt{
+#usertxt, #passtxt, #signupnametxt, #signupusertxt, #signuppasstxt{
 	-fx-background-color: transparent;
 	-fx-border-width: 0 0 1px 0;
 	-fx-border-color: #ffffff;
 	-fx-text-fill: #203060;
+}
+
+#questiontxtarea{
+	-fx-text-fill: black;
+	-fx-font-family: 'Century Gothic';
+	-fx-background-color: black;
 }

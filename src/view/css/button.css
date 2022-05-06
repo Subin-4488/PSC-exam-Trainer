@@ -4,6 +4,7 @@
 }
 
 #adminbtn, #userbtn{
+	-fx-text-fill: black;
 	-fx-background-color: #ffffff;
 	-fx-background-radius: 50px;
 	-fx-border-radius: 50px;
@@ -11,6 +12,7 @@
 
 #adminbtn:hover, #userbtn:hover{
 	-fx-background-color: red;
+	-fx-text-fill: white
 }
 
 #loginbtn, #signupbtn{
@@ -23,4 +25,46 @@
 #loginbtn:hover, #signupbtn:hover{
 	-fx-background-color: black;
 	-fx-text-fill: white
+}
+
+#leaderboardbtn, #practicebtn, #materialbtn, #competebtn{
+	-fx-background-color: transparent;
+	-fx-background-radius: 30px;
+	-fx-border-radius: 30px;
+	-fx-text-fill: white;
+	-fx-border-color: white;
+}
+
+#leaderboardbtn:hover, #practicebtn:hover, #materialbtn:hover, #competebtn:hover{
+	-fx-background-color: white;
+	-fx-text-fill: black;
+	-fx-scale-x: 1.15;
+	-fx-scale-y: 1.05;
+}
+
+#savebtn{
+	-fx-background-radius: 30px;
+	-fx-border-radius: 30px;
+	-fx-background-color: #2A1E17;
+	-fx-text-fill: white;
+}
+
+#savebtn:hover{
+	-fx-background-color: red;
+	-fx-text-fill: white
+}
+
+#agriculturebtn, #historybtn{
+	-fx-background-color: transparent;
+	-fx-border-color: black;	
+	-fx-background-radius: 30px;
+	-fx-border-radius: 30px;
+	-fx-text-fill: black;
+}
+
+#agriculturebtn:hover, #historybtn:hover{
+	-fx-scale-x: 1.05;
+	-fx-scale-y: 1.05;
+	-fx-background-color: black;
+	-fx-text-fill: white;
 }
